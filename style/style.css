@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: large;
+  }
+  
+  
+  
+
+  main{
+
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    
+
+    position: relative;
+    
+    
+  }
+
+  #Alura-logo{
+
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    height: 48px;
+    width: 31px;
+    left: 44px;
+    top: 40px;
+
+}
+aside{
+    
+    flex-direction: column;
+    display: flex;     
+    width: 400px;
+    height: 90%;
+    left: 1000px;
+    top: 40px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: url("matalic.jpg");
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+#w3review{
+
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: 3px solid red;
+    border-top: none; 
+    border-right: none; 
+    border-bottom: 2px solid black; /* poner un borde inferior de 2px sólido negro */
+    border-left: 2px solid black; /* poner un borde izquierdo de 2px sólido negro */
+    border-radius: 5px;
+    padding: 10px;
+    
+
+}
+
+textarea{
+
+    padding: 10px;
+}
+
+#rama{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    gap: 8px;
+    box-shadow: 5px 5px 12px;
+    position:absolute; 
+    left:240px;
+    right:0px; 
+    bottom:50px; 
+    width: 500px;
+    background:linear-gradient(white,#CACFD2);
+    
+   
+
+}
+
+
+
+
+.buttons{
+    
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    border-top: none; 
+    border-right: none; 
+    border-bottom: 2px solid black; /* poner un borde inferior de 2px sólido negro */
+    border-left: 2px solid black; /* poner un borde izquierdo de 2px sólido negro */
+    
+    
+}
+.aside-div{
+    width: 300px;
+    height: 50px;
+    border: 2px solid red;
+    background-image: url("img/Vector.jpg");
+    
+   
+    
+    
+
+}
+#test{
+
+    padding: 10px;
+}
