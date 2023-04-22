@@ -26,25 +26,40 @@ function encriptador(){
             }
 
         }
-    document.getElementById("test").innerHTML = nueva;
+    document.getElementById("japi").innerHTML = nueva;
     document.getElementById("w3review").value = " ";
 }
 
-var elemento = ""
+function desencriptador(){
 
-function copiar(){
+    var algo = document.getElementById('w3review').value;
     
-    
-    document.getElementById("w3review").innerHTML = "puto";
-    
-    
-}
+    var desencriptado = " "
+    for  ( var  i=0 ; i < algo.length; i++) {
+        var letra = algo.charAt(i)
+            if (letra == "a" || letra == "i" || letra == "o" || letra == "e" || letra == "u" ){
+                desencriptado += letra; 
+                if (letra == "a"){
+                    i += 1
+                }
+                else if (letra == "i"){
+                    i += 3
+                }
+                else if (letra == "o"){
+                    i += 3
+                }else if (letra == "u"){
 
-function pegar(){
-    
-    var codigo = document.getElementById('test').value;
-    
-    
-}
+                    i+=3
+                }else if (letra == "e"){
 
+                    i+=4
+                }
+        
+            }else{
+                desencriptado += letra;
 
+            }
+    }   
+    document.getElementById("test").innerHTML = desencriptado; 
+}  
+                
