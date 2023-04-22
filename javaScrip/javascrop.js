@@ -27,6 +27,24 @@ function encriptador(){
 
         }
     document.getElementById("test").innerHTML = nueva;
+    document.getElementById("w3review").value = " ";
+}
+
+var elemento = ""
+
+function copiar(){
+    
+    
+    document.getElementById("w3review").innerHTML = "puto";
+    
+    
+}
+
+function pegar(){
+    
+    var codigo = document.getElementById('test').value;
+    
+    
 }
 
 

@@ -14,8 +14,6 @@
     background-color: white;
     width: 100%;
     height: 100vh;
-    
-
     position: relative;
     
     
@@ -41,12 +39,14 @@ aside{
     left: 1000px;
     top: 40px;
     position: absolute;
-    border: 2px solid black;
+    
     border-radius: 5px;
     background-image: url("matalic.jpg");
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap:100px;
+    box-shadow: 5px 5px 12px;
+    background:linear-gradient(white,#CACFD2);
 }
 #w3review{
 
@@ -60,11 +60,8 @@ aside{
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    
     border-bottom: 2px solid black; 
     border-right: none; 
-    
-    
     padding: 10px;
     
     
@@ -73,6 +70,7 @@ aside{
 input:focus {
      outline: none;
 }
+
 
 
 textarea{
@@ -94,7 +92,7 @@ textarea{
     bottom:50px; 
     width: 500px;
     background:linear-gradient(white,#CACFD2);
-    
+    border-radius: 5px;
    
 
 }
@@ -113,6 +111,7 @@ textarea{
     border-bottom: 2px solid black; 
     border-left: 2px solid black;
     transition: background-color 0.2s;
+    cursor: pointer;
     
     
 }
@@ -120,19 +119,59 @@ textarea{
     width: 300px;
     height: 50px;
     border: 2px solid blue;
-    
-    
-   
-    
-    
-
 }
 #test{
 
     padding: 10px;
 }
 
+
+p{
+    left:240px;
+    right:0px; 
+    position: absolute;
+    bottom:150px; 
+}
+#copiar{
+
+    background-color: rgb(255, 0, 0);
+    border-top: none; 
+    border-right: none; 
+    border-bottom: 2px solid black; 
+    border-left: 2px solid black;
+    transition: background-color 0.2s;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+
+#pegar{
+    padding: 10px;
+    position: absolute;
+    left: 240px;
+    top: 268px;
+    width: 150px;
+    cursor: pointer;
+
+}
+    
+
+
+
+
+
 .buttons:active {
+    
+    box-shadow: 0 5px  #666;
+    transform: translateY(4px);
     background-color: rgb(35, 255, 6);
     border-top: none;
   }
+
+  #copiar:active{
+
+    background-color: rgb(35, 255, 6);
+}
