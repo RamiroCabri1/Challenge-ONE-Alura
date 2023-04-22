@@ -1,33 +1,44 @@
 
 function encriptador(){
-    
+    var mensaje = "Por favor no mas de 40 letras"
+    document.getElementById("japi").value = " ";
     var algo = document.getElementById('w3review').value;
+    var inicio = 1
+    for ( var i = 0; i < inicio; i++){
+        
+        if (algo.length > 40){
+            document.getElementById("japi").innerHTML = mensaje;  
+            document.getElementById("w3review").value = " ";
+            break;
+        }else{
+            var nueva = " "
+            for  ( var  i=0 ; i < algo.length; i++) {
+                var letra = algo.charAt(i)
+                    if (letra == "a"){
+                        nueva += letra+ "i" 
+                    }
+                    else if (letra == "i"){
+                        nueva += letra+ "mes" 
+                    }
+                    else if  (letra == "e"){
+                        nueva += letra + "nter"   
+                    }
+                    else if  (letra == "o"){
+                        nueva += letra + "ber"
+                    }
+                    else if  (letra == "u"){
+                        nueva += letra + "fat" 
+                    }
+                    else{
+                        nueva += letra 
+                    }
     
-    var nueva = " "
-    for  ( var  i=0 ; i < algo.length; i++) {
-        var letra = algo.charAt(i)
-            if (letra == "a"){
-                nueva += letra+ "i" 
-            }
-            else if (letra == "i"){
-                nueva += letra+ "mes" 
-            }
-            else if  (letra == "e"){
-                nueva += letra + "nter"   
-            }
-            else if  (letra == "o"){
-                nueva += letra + "ber"
-            }
-            else if  (letra == "u"){
-                nueva += letra + "fat" 
-            }
-            else{
-                nueva += letra 
-            }
-
+                } 
         }
-    document.getElementById("japi").innerHTML = nueva;
-    document.getElementById("w3review").value = " ";
+        document.getElementById("japi").innerHTML = nueva;
+        document.getElementById("w3review").value = " ";
+
+    }
 }
 
 function desencriptador(){
@@ -61,5 +72,6 @@ function desencriptador(){
             }
     }   
     document.getElementById("test").innerHTML = desencriptado; 
+    document.getElementById("w3review").value = " ";
 }  
                 
