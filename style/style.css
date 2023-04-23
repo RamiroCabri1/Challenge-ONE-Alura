@@ -39,7 +39,7 @@ aside{
     left: 1000px;
     top: 40px;
     position: absolute;
-    
+    font-size: 15px;
     border-radius: 5px;
     background-image: url("matalic.jpg");
     align-items: center;
@@ -132,6 +132,13 @@ p{
     right:0px; 
     position: absolute;
     bottom:150px; 
+}
+.aside-div > p{
+    left:240px;
+    right:0px; 
+    position: absolute;
+    bottom:150px; 
+
 }
 #copiar{
 

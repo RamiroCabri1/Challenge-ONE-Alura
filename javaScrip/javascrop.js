@@ -1,4 +1,5 @@
 
+var nueva = " "
 function encriptador(){
     var mensaje = "Por favor no mas de 40 letras"
     document.getElementById("japi").value = " ";
@@ -37,7 +38,7 @@ function encriptador(){
         }
         document.getElementById("japi").innerHTML = nueva;
         document.getElementById("w3review").value = " ";
-
+        return nueva;
     }
 }
 
